@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Q4-Z1-RuX">
+                                <rect key="frame" x="0.0" y="687" width="414" height="49"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <items/>
+                                <color key="barTintColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tabBar>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfG-F5-RqU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="ładowanie..." largeTitleDisplayMode="always" id="xfo-mo-mf4"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcG-PZ-ZsX">
+                                <rect key="frame" x="0.0" y="96" width="414" height="591"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageLogo" translatesAutoresizingMaskIntoConstraints="NO" id="O8b-oW-Bhv">
+                                        <rect key="frame" x="107" y="196" width="200" height="200"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iLife" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrE-Cs-ujV">
+                                        <rect key="frame" x="176.66666666666666" y="403.66666666666669" width="60.666666666666657" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="TrE-Cs-ujV" firstAttribute="centerX" secondItem="XcG-PZ-ZsX" secondAttribute="centerX" id="7YA-QM-54F"/>
+                                    <constraint firstItem="O8b-oW-Bhv" firstAttribute="centerX" secondItem="XcG-PZ-ZsX" secondAttribute="centerX" id="8bY-nV-9Qu"/>
+                                    <constraint firstItem="O8b-oW-Bhv" firstAttribute="centerY" secondItem="XcG-PZ-ZsX" secondAttribute="centerY" id="Onx-3t-Lfd"/>
+                                    <constraint firstItem="TrE-Cs-ujV" firstAttribute="top" secondItem="O8b-oW-Bhv" secondAttribute="bottom" constant="8" id="kPH-8V-tBX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Q4-Z1-RuX" firstAttribute="top" secondItem="XcG-PZ-ZsX" secondAttribute="bottom" id="9EJ-8R-VEp"/>
+                            <constraint firstItem="XcG-PZ-ZsX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J9L-qz-DyC"/>
+                            <constraint firstItem="XcG-PZ-ZsX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JEM-w5-Dgu"/>
+                            <constraint firstItem="dfG-F5-RqU" firstAttribute="leading" secondItem="XcG-PZ-ZsX" secondAttribute="leading" id="MzS-kK-cCW"/>
+                            <constraint firstItem="6Q4-Z1-RuX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XFu-Kr-5d3"/>
+                            <constraint firstItem="dfG-F5-RqU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="e7J-eH-1qd"/>
+                            <constraint firstItem="6Q4-Z1-RuX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iLm-fH-ulc"/>
+                            <constraint firstItem="6Q4-Z1-RuX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jMz-hh-GIl"/>
+                            <constraint firstItem="XcG-PZ-ZsX" firstAttribute="top" secondItem="dfG-F5-RqU" secondAttribute="bottom" id="pwx-J4-j6k"/>
+                            <constraint firstItem="6Q4-Z1-RuX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qZH-At-6BM"/>
+                            <constraint firstItem="6Q4-Z1-RuX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="u47-iB-vhA"/>
+                            <constraint firstItem="dfG-F5-RqU" firstAttribute="trailing" secondItem="XcG-PZ-ZsX" secondAttribute="trailing" id="ylB-Mc-XKN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="374.18478260869568"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ImageLogo" width="200" height="200"/>
+    </resources>
+</document>
